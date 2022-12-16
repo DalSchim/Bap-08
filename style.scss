@@ -12,29 +12,6 @@
     
 }
 
-.burgeur{
-    background-color: #4B6758;
-    list-style: none;
-    z-index: 3444;
-    flex-direction: column;
-    gap: 33px;
-    display: flex;
-    position: absolute;
-    position: fixed;
-    right: 1px;
-    width: 189px;
-    height: 100%;
-
-    ul{
-    display: flex;
-        gap: 45px;
-        li{
-            list-style: none;
-        }
-    }
-}
-
-
 h2{
     font-family: biosans;
 }
@@ -50,6 +27,8 @@ font-style: normal;
 font-weight: 800px;
 color: black;
 }
+
+
 
 
 
@@ -79,6 +58,9 @@ header{
             
         }
     }
+
+
+
     div{
         display: flex;
         align-items: center;
@@ -254,6 +236,7 @@ main{
         }
         
     }
+
 }
 
 
@@ -306,6 +289,7 @@ main{
             border-radius: 90px;
             font-size: 20px;
         }
+
     }
 
 }
@@ -389,6 +373,30 @@ footer{
 
 @media screen and (max-width:767px) {
 
+
+    header{
+        justify-content: space-evenly;
+        div{
+            i{
+                display: none;
+            }
+            
+
+            .fi-br-menu-burger{
+                display: block;
+            }
+        }
+
+    
+        ul{
+            display: none;}
+
+
+        
+    }
+
+   
+    
 
     main{
         .swiper {
@@ -494,6 +502,8 @@ footer{
         }
     
     }
+
+    
 
 
 
