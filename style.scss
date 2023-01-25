@@ -24,7 +24,6 @@ h3{
 p{
 font-family: 'Roboto';
 font-style: normal;
-font-weight: 800px;
 color: black;
 }
 
@@ -42,8 +41,9 @@ header{
     align-items: center;
 
     img{
+        object-fit: cover;
         width: 128px;
-        height: auto 128px;
+        height:  auto;
     }
     ul{
         font-family: 'Roboto';
@@ -95,18 +95,25 @@ header{
 }
 
 main{
+
+
+
     .swiper {
         padding-top: 42px;
         background-color: #D4E1C1;
         width: 100%;
         height: 100vh;
+
+
         .swiper-slide{
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
+
             img{
-                width: 100%;
+                width: 100vh;
             }
+
             div{
                 padding-left:129px ;
                 flex-direction: column;
@@ -194,6 +201,7 @@ main{
 
 
          img{
+             object-fit: cover;
             border-radius: 20px;
             width: 100%;
             height: 100px;
@@ -370,45 +378,145 @@ footer{
 
 
 
+
 /* page produit*/
 
 .produitp{
-    padding-top:89px;
+   padding-top:150px;
     display: flex;
-    justify-content: center;
     width: 100%;
-    height: 100vh;
-    align-items: center;
-    .global{
-    
-        display: flex;
-        align-items: center;
+    justify-content: center;
+    gap: 45px;
+
+    .images{
         justify-content: center;
+        width: 100%;
+        display: flex;
         gap: 34px;
         .image{
+            align-items: center;
+
+            gap: 45px;
             display: flex;
-            justify-content: space-between;
             flex-direction: column;
-            gap: 20px;
             img{
-                width: 60px;
-                height: 60px;
+
+                object-fit: cover;
+                width: 106px;
+                height: 106px;
+
             }
+
         }
 
-        .imp{width: 200px;}
-    }
-    
-    .des{display: flex;
+        .imp{
 
-        width: 200px;
+            width:  500px;
+            height: 500px;
+            object-fit: cover;
+
+        }
+
+    }
+
+    hr{
+        border: 2px solid black;
+
+    }
+
+.text{
+    width: 100%;
+}
+    .des{
+        display: flex;
+        gap: 45px;
+        width: 450px;
         flex-direction: column;
+        .prix{
+            font-size: 32px;
+            color: hsla(148, 16%, 35%, 1);
+        }
+        .add{
+            text-align: center;
+            background:hsla(162, 10%, 20%, 1);
+            border-radius: 60px;
+            color: white;
+            padding: 13px 36px;
+        }
+
+        div{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
     }
 }
 
+.other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 45px;
 
 
+    .card{
+        gap: 15px;
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+        background: hsla(0, 0%, 96%, 1);
+        img{
+            width: 100%;
+            border-radius: 40px 40px 0px 0px;
+        }
+        .prix2{
+            color: hsla(148, 16%, 35%, 1);
+        }
+        div{
+            background: hsla(84, 35%, 82%, 1);
+            color: black;
+            width: 60px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 45px;
+        }
+    }
 
+}
+
+.inf{padding-left: 170px;
+    margin-top: 90px;}
+
+.program{
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    width: 100%;
+    align-items: center;
+    hr{
+        height:91px;
+        border: black solid 2px;
+        border-radius: 48px;
+    }
+    div{
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        iconify-icon{
+            font-size: 80px;
+        }
+        width: 264px;
+        height: 91px;
+    }
+}
 
 
 
@@ -416,15 +524,17 @@ footer{
 
 
     header{
-        justify-content: space-evenly;
+        justify-content: space-between;
         div{
             i{
+
                 display: none;
             }
             
 
             .fi-br-menu-burger{
                 display: block;
+                margin-right:50px ;
             }
         }
 
@@ -490,7 +600,13 @@ footer{
           }
 
     }
-    
+
+
+    #img3{
+        position: absolute;
+        left: 0;
+        top:445px;
+    }
 
 
     .vendre{
@@ -500,7 +616,7 @@ footer{
         align-items: center;
         width: 100%;
         justify-content: center;
-        height:  auto 739px;
+        height: 739px;
         flex-direction: column;
         flex-wrap: wrap;
         padding: 12px;
@@ -542,6 +658,81 @@ footer{
             }
         }
     
+    }
+
+
+
+    .produitp{
+        align-items: center;
+        padding-top:95px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 45px;
+
+        .images{
+            justify-content: center;
+            width: 100%;
+            flex-direction: column-reverse;
+            display: flex;
+            gap: 34px;
+            .image{
+                align-items: center;
+                gap: 45px;
+                display: flex;
+                flex-direction: row;
+                img{
+                    object-fit: cover;
+                    width: 106px;
+                    height: 106px;
+
+                }
+
+            }
+
+            .imp{
+
+                width:  100vh;
+                height: 500px;
+                object-fit: cover;
+
+            }
+
+        }
+
+        hr{
+            width: 100%;
+            border: 2px solid black;
+
+        }
+
+        .text{
+            width: 100%;
+        }
+        .des{
+            display: flex;
+            gap: 45px;
+            width: 450px;
+            flex-direction: column;
+            .prix{
+                font-size: 32px;
+                color: hsla(148, 16%, 35%, 1);
+            }
+            .add{
+                text-align: center;
+                background:hsla(162, 10%, 20%, 1);
+                border-radius: 60px;
+                color: white;
+                padding: 13px 36px;
+            }
+
+            div{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+            }
+        }
     }
 
     
